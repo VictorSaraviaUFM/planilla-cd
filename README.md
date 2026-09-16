@@ -24,6 +24,8 @@ técnicas de la HDT 2: particiones de equivalencia, valores frontera y tabla de 
 
 **3. Coverage gate.** `--cov-fail-under` en no menos de 80, justificado en una línea. El gate cuenta todo `src/planilla`, así que la CLI también entra: probando solo las reglas de negocio el umbral no se alcanza.
 
+La cobertura mínima es 95%. Se revisa todo `src/planilla`, incluida la CLI, para asegurar que las reglas y el uso por terminal sigan funcionando. La suite actual llega al 99%, así que el límite es exigente pero realista.
+
 **4. Evidencia.** Dos runs con su SHA: uno **rojo**, rompiendo algo a propósito, y uno
 **verde** con el arreglo. Un pipeline que nunca falló no demuestra que la puerta sirva.
 
