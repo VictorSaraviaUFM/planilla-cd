@@ -1,7 +1,6 @@
 """Interfaz de linea de comandos."""
 
 import sys
-import os
 
 from planilla.calculo import liquidar, resumen
 
